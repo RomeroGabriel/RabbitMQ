@@ -15,7 +15,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroRabbit.Domain.Core", "MicroRabbit.Domain.Core\MicroRabbit.Domain.Core.csproj", "{6D001C95-0E73-4E9B-B752-0ABA97F8B16D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroRabbit.Infra.Bus", "MicroRabbit.Infra.Bus\MicroRabbit.Infra.Bus.csproj", "{5AE663EC-8BFD-47C2-95FF-6A717EAB7776}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroRabbit.Infra.Bus", "MicroRabbit.Infra.Bus\MicroRabbit.Infra.Bus.csproj", "{5AE663EC-8BFD-47C2-95FF-6A717EAB7776}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroRabbit.Infra.IoC", "MicroRabbit.Infra.IoC\MicroRabbit.Infra.IoC.csproj", "{BA4020C2-721A-4AD5-A32D-6CE5371F24BA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +33,10 @@ Global
 		{5AE663EC-8BFD-47C2-95FF-6A717EAB7776}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AE663EC-8BFD-47C2-95FF-6A717EAB7776}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AE663EC-8BFD-47C2-95FF-6A717EAB7776}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA4020C2-721A-4AD5-A32D-6CE5371F24BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA4020C2-721A-4AD5-A32D-6CE5371F24BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA4020C2-721A-4AD5-A32D-6CE5371F24BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA4020C2-721A-4AD5-A32D-6CE5371F24BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,6 +44,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{6D001C95-0E73-4E9B-B752-0ABA97F8B16D} = {B8A28D80-DAAA-4AA0-B3D5-DC61FAF506A1}
 		{5AE663EC-8BFD-47C2-95FF-6A717EAB7776} = {08EC771D-182D-499A-B463-84FF98C1878D}
+		{BA4020C2-721A-4AD5-A32D-6CE5371F24BA} = {04D0EE30-D70E-4C77-B59D-A591FAAEA8DC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4C7CCED8-5195-49B0-9EB4-178D2F36CF98}
