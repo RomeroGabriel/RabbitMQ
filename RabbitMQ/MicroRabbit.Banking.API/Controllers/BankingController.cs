@@ -1,11 +1,7 @@
 ﻿using MicroRabbit.Baking.Application.Interfaces;
 using MicroRabbit.Baking.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace MicroRabbit.Banking.API.Controllers
 {
@@ -21,9 +17,9 @@ namespace MicroRabbit.Banking.API.Controllers
         }
 
         [HttpGet]
-        public ActionResult<IEnumerable<Account>> Get()
+        public IEnumerable<Account> Get()
         {
-            return Ok(accountService.GetAccounts());
+            return accountService.GetAccounts();
         }
     }
 }
