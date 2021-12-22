@@ -30,7 +30,10 @@ namespace MicroRabbit.Banking.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            services.AddMvc(options =>
+            {
+                options.EnableEndpointRouting = false;
+            });
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -63,15 +66,7 @@ namespace MicroRabbit.Banking.API
             }
 
             app.UseHttpsRedirection();
-
-            app.UseRouting();
-
-            app.UseAuthorization();
-
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });
+            app.UseMvc();
         }
     }
 }

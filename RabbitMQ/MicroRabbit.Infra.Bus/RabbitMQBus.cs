@@ -27,6 +27,7 @@ namespace MicroRabbit.Infra.Bus
             this.eventTypes = new List<Type>();
             factory = new ConnectionFactory() { HostName = "localhost" };
         }
+
         public void Publish<T>(T @event) where T : Event
         {
             //var factory = new ConnectionFactory() { HostName = "localhost" };
